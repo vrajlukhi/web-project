@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+.container{
+	display: flex;
+}
+.sidebar{
+	width: 25%;
+	height: 100vh;
+	padding: 50px 0;
+	background-color: #ddd;
+	position: fixed;
+}
+.sidebar>h3{
+	color: orangered;
+	padding-left: 40px;
+}
+.filter{
+	margin-top: 50px;
+	padding: 30px 40px;
+}
+.filter h3{
+	margin-bottom: 30px;
+}
+.contant{
+	width: 75%;
+	position: absolute;
+	right: 0;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	border-bottom: 1px solid #eee;
+	color: #383838;
+	background-color: #eee;
+}
+.header p{
+	font-size: 30px;
+	font-weight: bold;
+}
+.fil-p{
+	padding: 15px 15px;
+	background-color: white;
+	margin: 7px 0;
+	cursor: pointer;
+	color: #333;
+	text-align: justify;
+}
+.fil-p:hover{
+	color: orangered;
+	background-color: #aaa;
+}
+button{
+	width: 100%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	background-color: #aaa;
+	padding: 7px 25px;
+	cursor: pointer;
+	color: white;
+}
+
+#root{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) ;
+	grid-gap: 20px;
+	padding: 30px;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #ddd;
+	padding: 15px;
+}
+.box>h3{
+	margin-bottom: 20px;
+}
+.img-box{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.images{
+	max-height: 90%;
+	max-width: 90%;
+	object-fit: cover;
+	object-position: center;
+}
+.bottom{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+}
+h2{
+	font-size: 20px;
+	color: red;
+}
+button:hover{
+	background-color: #333;
+}
